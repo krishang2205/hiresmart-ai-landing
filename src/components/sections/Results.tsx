@@ -12,15 +12,7 @@ const Results = () => {
 
         <Reveal>
           <figure className="mt-10 rounded-xl border border-border bg-card p-3 md:p-4 shadow-sm">
-            <img
-              src={dashboard}
-              alt="Dashboard mockup showing Best for Hire, Can Consider, and Not Good categories"
-              className="w-full h-auto rounded-lg"
-              loading="lazy"
-              decoding="async"
-              width={1024}
-              height={640}
-            />
+            {/* Visualization removed per user request */}
             <figcaption className="mt-3 text-center text-sm text-muted-foreground">
               Candidate categories powered by cosine similarity and skill matching
             </figcaption>
