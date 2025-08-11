@@ -1,13 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import SeoHead from "@/components/SeoHead";
+import Hero from "@/components/sections/Hero";
+import Features from "@/components/sections/Features";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Results from "@/components/sections/Results";
+import Testimonials from "@/components/sections/Testimonials";
+import CTA from "@/components/sections/CTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const title = "HireSmart – AI-Powered Resume Screening";
+  const description = "Evaluate resumes in seconds. Match skills. Hire smarter.";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "HireSmart",
+    description,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD"
+    }
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <SeoHead title={title} description={description} jsonLd={jsonLd} />
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <Results />
+        <Testimonials />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 };
 
