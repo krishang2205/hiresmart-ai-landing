@@ -12,7 +12,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section aria-label="Features" className="py-16 md:py-24 border-t border-border bg-white">
+    <section id="features" aria-label="Features" className="py-16 md:py-24 border-t border-border bg-white">
       <div className="container mx-auto px-6 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold">Features built for speed and clarity</h2>
