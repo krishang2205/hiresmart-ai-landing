@@ -6,6 +6,7 @@ import Results from "@/components/sections/Results";
 import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Index = () => {
   const title = "HireSmart – AI-Powered Resume Screening";
@@ -27,6 +28,7 @@ const Index = () => {
   return (
     <>
       <SeoHead title={title} description={description} jsonLd={jsonLd} />
+      <Header />
       <main>
         <Hero />
         <Features />

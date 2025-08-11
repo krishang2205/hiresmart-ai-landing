@@ -14,7 +14,7 @@ const CTA = () => {
   };
 
   return (
-    <section aria-label="Call to action" className="py-16 md:py-24 border-t border-border bg-white">
+    <section id="cta" aria-label="Call to action" className="py-16 md:py-24 border-t border-border bg-white">
       <div className="container mx-auto px-6 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
